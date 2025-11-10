@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    
+
+
+</head>
+<body>
+    <header>
+        <div class = "logo">
+            <img src="header-logo.png" alt="logo">
+        </div>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="index.html">Characters</a></li>
+                <li><a href="about.html">Vehicles</a></li>
+                <li><a href="services.html">Missions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- hero-section-sliders -->
+<section class="hero-slider">
+
+  <!-- Slide 1 -->
+  <div class="slide active">
+    <img src="assets/Jason_Duval_01.jpg" alt="Characters">
+    <div class="slide-content">
+      <h2>Meet the Crew</h2>
+      <p>Three lives, one city — united by chaos and ambition.</p>
+      <a href="characters.html" class="btn-slide">Explore Characters</a>
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide">
+    <img src="assets/Vice_City_03.jpg" alt="City of NeoDrive">
+    <div class="slide-content">
+      <h2>Explore the City</h2>
+      <p>Welcome to NeoDrive — where every corner hides a story.</p>
+      <a href="city.html" class="btn-slide">Discover City</a>
+    </div>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide">
+    <img src="images/vehicles.jpg" alt="Vehicles">
+    <div class="slide-content">
+      <h2>See the Machines</h2>
+      <p>Speed, power, and control — build your dream garage.</p>
+      <a href="vehicles.html" class="btn-slide">View Vehicles</a>
+    </div>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide">
+    <img src="images/missions.jpg" alt="Missions">
+    <div class="slide-content">
+      <h2>Start a Mission</h2>
+      <p>Every job has a risk. Every risk has a price.</p>
+      <a href="missions.html" class="btn-slide">Play Missions</a>
+    </div>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="slide">
+    <img src="images/contact.jpg" alt="Join the Crew">
+    <div class="slide-content">
+      <h2>Join the Crew</h2>
+      <p>Become part of the legacy. Take your seat in the empire.</p>
+      <a href="contact.html" class="btn-slide">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="trailer-bg">
+  <!-- Background YouTube Video -->
+  <div class="trailer-video-bg">
+    <iframe 
+      src="https://www.youtube.com/embed/QdBZY2fkU-0?autoplay=1&mute=1&loop=1&playlist=QdBZY2fkU-0&controls=0&showinfo=0&modestbranding=1"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <!-- Overlay -->
+  <div class="trailer-overlay"></div>
+
+  <!-- Text Content -->
+  <div class="trailer-textbox">
+    <p class="trailertag">Games / <span>Grand Theft Auto VI</span></p>
+    <h1>Watch the Official GTA VI Trailer</h1>
+    <p class="trailer-desc">
+      Experience the next chapter in the Grand Theft Auto universe —
+      set in the neon-soaked streets of Vice City. Watch the official trailer
+      and step into a new era of chaos, luxury, and crime.
+    </p>
+
+    <div class="trailer-buttons">
+      <a href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank" class="btn-watch">▶ Watch Trailer</a>
+      <a href="about.html" class="btn-learn">Learn More</a>
+    </div>
+
+    <div class="platform-icons">
+      <img src="assets/icons/ps5.png" alt="PS5">
+      <img src="assets/icons/xbox2.png" alt="Xbox">
+      <img src="assets/icons/pc.png" alt="PC">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ===== BACKGROUND MUSIC ===== -->
+<audio id="bg-music" src="assets/Tom_Petty_-_Love_Is_A_Long_Road_(mp3.pm).mp3" autoplay loop></audio>
+
+<!-- Music control button -->
+<button id="music-toggle" class="glass-btn">⏸</button>
+
+<script src="music.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
