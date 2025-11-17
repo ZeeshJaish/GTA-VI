@@ -1,18 +1,18 @@
-// ===== Select all slides =====
+// Select all slides 
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
-// ===== Function to go to a specific slide =====
+//Function to go to a specific slide 
 function showSlide(index) {
   slides[currentSlide].classList.remove('active');
   currentSlide = (index + slides.length) % slides.length; // loop around
   slides[currentSlide].classList.add('active');
 }
 
-// ===== Auto change every 4 seconds =====
+//Auto change every 4 seconds 
 let autoSlide = setInterval(() => showSlide(currentSlide + 1), 4000);
 
-// ===== Swipe / Drag controls =====
+// Swipe / Drag controls 
 let startX = 0;
 let isDragging = false;
 
@@ -38,7 +38,7 @@ document.querySelector('.hero-slider').addEventListener('touchend', e => {
   autoSlide = setInterval(() => showSlide(currentSlide + 1), 4000); // resume auto
 });
 
-// ===== Optional: Desktop drag with mouse =====
+//  drag with mouse 
 let mouseStart = 0;
 document.querySelector('.hero-slider').addEventListener('mousedown', e => {
   mouseStart = e.clientX;

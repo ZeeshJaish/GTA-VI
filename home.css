@@ -13,58 +13,7 @@ body {
 }
 
 
-header {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;  
-  padding: 15px 60px;
-  background: rgba(0, 0, 0, 0.6);  
-  backdrop-filter: blur(8px);      
-  position: fixed; 
-  top: 0;
-  width: 100%;
-  z-index: 100;
-}
 
-
-.logo img {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-
-
-.header-menu ul {
-  list-style: none;
-  display: flex;       
-  gap: 40px;
-}
-
-.header-menu a {
-  text-decoration: none;          
-  color: #eaeaea;                 
-  font-weight: 700;              
-  font-size: 14px;
-  letter-spacing: 1px;        
-  text-transform: uppercase;    
-  padding: 8px 16px;         
-  border-radius: 25px;      
-  transition: all 0.3s ease;
-}
-
-
-.header-menu a:hover {
-  background: rgba(255, 255, 255, 0.15);  
-  backdrop-filter: blur(6px);             
-  color: #fff;                            
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
-}
-
-
-.header-menu a.active {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-}
 
 /* ===== HERO SLIDER ===== */
 .hero-slider {
@@ -137,7 +86,7 @@ header {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
-/*  fade overlay  */
+ fade overlay 
 .slide::after {
   content: "";
   position: absolute;
