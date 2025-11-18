@@ -8,7 +8,7 @@
 
 body {
     background: linear-gradient(to bottom, #000000,  #090707);
-    color: #fff;
+    color: #000000;
 }
 
 /* HEADER */
@@ -71,7 +71,7 @@ header {
 
 /* CARD */
 .char-card {
-    background: #16161d;
+    background: #e7aa0f;
     border-radius: 10px;
     overflow: hidden;
     transition: 0.3s;
@@ -92,7 +92,7 @@ header {
 .char-card p {
     font-size: 13px;
     margin: 5px 14px 14px 14px;
-    color: #cfcfcf;
+    color: #000000;
 }
 
 .char-card:hover {
