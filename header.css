@@ -23,7 +23,7 @@ header {
   list-style: none;
   display: flex;       
   gap: 40px;
-  margin-right: 80px;
+  margin-right: 120px;
 }
 
 .header-menu a {
