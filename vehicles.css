@@ -1,0 +1,107 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.vehicles-hero {
+    text-align: center;
+    margin-top: 140px;
+}
+
+.vehicles-hero h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.vehicles-hero p {
+    color: #bbb;
+    margin-top: 10px;
+}
+
+
+/* ===== BENTO GRID ===== */
+.bento-grid {
+    padding: 50px 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 230px;
+    gap: 25px;
+}
+
+/* CARD DEFAULT */
+.bento-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.12);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bento-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.78);
+    transition: .4s;
+}
+
+/* INFO TEXT */
+.v-info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    z-index: 3;
+}
+
+.v-info h3 {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.v-info p {
+    font-size: 13px;
+    color: #ccc;
+}
+
+
+/* ===== HOVER EFFECT ===== */
+.bento-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.55);
+}
+
+.bento-card:hover {
+    box-shadow: 
+        0 0 35px rgba(255, 0, 95, 0.25),
+        0 0 50px rgba(0, 200, 255, 0.2);
+}
+
+
+/* ===== GRID SIZES ===== */
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.tall {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.medium {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.small {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.wide {
+    grid-column: span 3;
+    grid-row: span 1;
+}
