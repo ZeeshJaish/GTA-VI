@@ -21,7 +21,7 @@ body {
 }
 
 
-/* ===== BENTO GRID ===== */
+/*  BENTO GRID  */
 .bento-grid {
     padding: 50px 60px;
     display: grid;
@@ -67,7 +67,7 @@ body {
 }
 
 
-/* ===== HOVER EFFECT ===== */
+/*  HOVER EFFECT  */
 .bento-card:hover img {
     transform: scale(1.1);
     filter: brightness(0.55);
@@ -80,7 +80,7 @@ body {
 }
 
 
-/* ===== GRID SIZES ===== */
+/*  GRID SIZES  */
 .big {
     grid-column: span 2;
     grid-row: span 2;
