@@ -1,0 +1,125 @@
+body {
+    background: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ===== HERO SECTION ===== */
+.mission-hero {
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+
+.mission-hero h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.mission-hero p {
+    color: #bbb;
+    margin-top: 10px;
+}
+
+
+
+/* ===== MISSIONS GRID ===== */
+.missions-grid {
+    padding: 0 70px 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+
+
+/* ===== MISSION CARD ===== */
+.mission-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 330px;
+    background: #111;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: 0.4s ease;
+}
+
+/* Background image */
+.mission-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
+    transition: 0.4s ease;
+}
+
+/* Overlay Content */
+.mission-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 3;
+}
+
+.mission-info h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.mission-info p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Start Button */
+.start-btn {
+    padding: 8px 22px;
+    background: rgba(255,255,255,0.18);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-size: 13px;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255,0.35);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    background: rgba(255,255,255,0.35);
+}
+
+
+
+/* ===== DIFFICULTY BADGES ===== */
+.difficulty {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 5px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    backdrop-filter: blur(6px);
+    z-index: 5;
+    letter-spacing: 1px;
+}
+
+.easy { background: rgba(0,255,0,0.28); color: #9cff9c; }
+.medium { background: rgba(255,165,0,0.28); color: #ffdd9c; }
+.hard { background: rgba(255,0,0,0.28); color: #ff9c9c; }
+
+
+
+/* ===== HOVER EFFECTS ===== */
+.mission-card:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.55);
+}
+
+.mission-card:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 90, 0.3),
+                0 0 50px rgba(0, 200, 255, 0.2);
+}
+
